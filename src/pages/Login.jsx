@@ -6,20 +6,21 @@ const Login = () => {
 
 		<p>Nombre de la web</p>
 		
-		<h1 className ="loginPage-title">Ingresa en nuestraWeb</h1>
+		<h1 className ="loginPage-title">Ingresa en nuestra Web</h1>
 		
 		<a href='www.facebook.com'>facebook</a>
 		<a href='www.google.com'>google</a>
 		<a href='www.gmail.com'>gmail</a>
-<form>
+	
+	<form className='formulario'>
 
-<input type = "text" name= "username"/>
+	<input type="text" name="username"/>
 
-<input type= "password" name= "password"/>
+	<input type="password" name="password"/>
 
-<buttom type="submit" variant="primary">Login</buttom>
+	<buttom type="submit" variant="primary">Login</buttom>
 
-</form>
+	</form>
 
 
 		
