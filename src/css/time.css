@@ -1,5 +1,96 @@
+body{
+    margin: 0;
+}
+/*Light y dark mode*/
+.light{
+    color: black;
+}
+.dark{
+    color: white;
+}
+
+/*imagen de fondo*/
+.fondo-time{
+    width: 100%;
+    background: rgba(90, 90, 90, 1);
+    height: 100vh;
+    display: flex;
+}
+/*contenedor de toda la info*/
 .time-container{
-    width: 70%;
+    width: 60%;
+    height: 40%;
+    padding: 3rem;
     margin: auto;
-    background: linear-gradient();
+    background: linear-gradient(rgba(22,38,51,1),rgba(38,59,77,0.7));
+}
+
+/*boton dark y light mode*/
+.switch-button{
+    margin-left: 4rem;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3rem;
+}
+.button-check{
+    display: none;
+}
+.switch-info{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(90, 90, 90, 1);
+}
+
+.switch-info:before{
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+
+.button-check:checked + .switch-info{
+    background: rgba(200, 200, 200, 1);
+}
+
+.button-check:checked + .switch-info:before{
+    transform: translateX(2rem);
+}
+
+.info-icons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*informacion*/
+.time-info-box{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.time-info{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.time-lugar{
+    text-align: center;
+}
+.time-temperatura{
+    font-size: 3rem;
+}
+
+.time-img{
+    width: 100%;
 }
