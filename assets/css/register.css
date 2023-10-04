@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* TITULOS Y ETIQUETAS P*/
+.title-login {
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 100px;
+    color: #3AA8A8;
+}
+
+.top-tittle {
+    margin: 0;
+}
+
+.prf {
+    color: #fff
+}
+
+/**************/
+.block-general {
+    display: flex;
+}
+
+/*************/
+/*Container global*/
+.global-box {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Bloque verde*/
+.block-left {
+    background-color: #3AA8A8;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+
+/*Contenido del bloque verde*/
+.content-block-left {
+    /*background: blue;*/
+    height: 50%;
+    width: 100%;
+    padding: 40px;
+}
+
+/*Funciones y estilos de Boton de ingreso*/
+.bt-ingreso {
+    width: 30%;
+    height: 22%;
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #3AA8A8;
+    font-size: 20px;
+    margin-left: 180px;
+    margin-top: 50px;
+
+}
+
+.bt-ingreso input {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.bt-ingreso:hover,
+.bt-ingreso input:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    text-decoration: underline;
+}
+
+/*---------Bloque derecho registro----------------------------------*/
+.block-rigth {
+    width: 60%;
+    justify-content: center;
+}
+
+.formulario.login {}
+
+.bt.login {
+    width: 30%;
+    padding: 8px 16px;
+    margin-top: 40px;
+    margin-left: 270px;
+    border: 3px solid #3AA8A8;
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+    background-color: #3AA8A8;
+}
+
+.bt.login input {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.bt.login:hover,
+.bt.login input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
