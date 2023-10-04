@@ -4,7 +4,7 @@ import './../../assets/css/register.css';
 const Register = () => {
 
         return  <>
-        
+                
         
 
         </>

@@ -88,12 +88,11 @@ body {
     width: 100%;
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
 }
 
-.time-lugar {
-    text-align: center;
+.time-lugar .lugar-text1 {
+    font-size: 1.5rem;
 }
 
 .time-temperatura {

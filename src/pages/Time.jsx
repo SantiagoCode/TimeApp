@@ -4,8 +4,8 @@ import './../../assets/css/time.css';
 const Time = () => {
 	let botonTiempo = document.getElementById('switch');
 		if (botonTiempo?.checked) {
-			let imagen1	= document.querySelector('time-img-1');
-				let imagen2 = document.querySelector('time-img-2');
+			let imagen1	= document.querySelector('.time-img-1');
+				let imagen2 = document.querySelector('.time-img-2');
 				imagen1.classList.toggle('invisible');
 				imagen2.classList.toggle('invisible');
 				let fondoImagen = querySelector('fondo-time');
@@ -22,7 +22,10 @@ const Time = () => {
 			</div>
 			<div className='time-info-box'>
 				<div className='time-info'>
-				<span className='time-lugar'>Venezuela, Caracas <br /> hoy 01-01-2023</span>
+				<span className='time-lugar'>
+					<p className='lugar-text1'>Venezuela, Caracas </p>
+					<p className='lugar-text2'>hoy 01-01-2023</p>
+				</span>
 				<span className='time-temperatura'>40 °C</span>
 				</div>
 				<div className='time-img'>

@@ -6,12 +6,9 @@ import './../../assets/css/login.css'
 const Login = () => {
 
 	useEffect(() => {
-
-	let bt1 = document.querySelector('#registro');
-	let bt2 = document.querySelector('#ingresa');
-	let infoLogin = document.querySelector('#infoLogin');
-	let infoRegister = document.querySelector('infoRegister');
 	
+	let bt1 = document.querySelector('#registro');
+	let infoLogin = document.querySelector('#infoLogin');
 	let infoUno = `<div id='infoRegister' class="global-box">
             
 	<div class="block-left">
@@ -63,7 +60,7 @@ const Login = () => {
 			</div>							
 				
 				<div class='bt login'>
-					<input  type="submit" value="REGISTRARTE"/>
+					<input type="submit" value="REGISTRARTE"/>
 				</div>
 
 			</form>
@@ -72,85 +69,81 @@ const Login = () => {
 
 </div>
 </div>`;
-	let infoDos = `<div id='infoLogin' class='global'>
-		
-	<div class='container-global'>
-		
-		<div class='block-blue'>
+	let infoDos = `<div class='container-global'>
 			
-			<div class='container-login'>
-				
-				<h1 class ="login-title">Ingresa en nuestra Web</h1>
-					<div class='redes-sociales'>
-				<a href='www.facebook.com'><img src='./../../assets/images/facebook-svgrepo-com.svg' class='logos'/></a>
-				<a href='www.google.com'><img src='./../../assets/images/google-plus-svgrepo-com.svg' class='logos'/></a>
-				<a href='www.gmail.com'><img src='./../../assets/images/google-svgrepo-com.svg' class='logos'/></a>
-					</div>
-					
-				<div class='line-text'>
-					<p>Ingresa tus datos para iniciar</p>
+	<div class='block-blue'>
+		
+		<div class='container-login'>
+			
+			<h1 class ="login-title">Ingresa en nuestra Web</h1>
+				<div class='redes-sociales'>
+			<a href='www.facebook.com'><img src='./../../assets/images/facebook-svgrepo-com.svg' class='logos'/></a>
+			<a href='www.google.com'><img src='./../../assets/images/google-plus-svgrepo-com.svg' class='logos'/></a>
+			<a href='www.gmail.com'><img src='./../../assets/images/google-svgrepo-com.svg' class='logos'/></a>
 				</div>
-					
-					<form class='formulario'>
-						<div class='inp'>
-							<div class='icon-left'>
-								<img src='./../../assets/images/user-svgrepo-com.svg'/>
-							</div>
-						<input type="text" name="username" placeholder='Nombre'/>
-					</div>
+				
+			<div class='line-text'>
+				<p>Ingresa tus datos para iniciar</p>
+			</div>
+				
+				<form class='formulario'>
 					<div class='inp'>
 						<div class='icon-left'>
-							<img src='./../../assets/images/password-minimalistic-input-svgrepo-com.svg'/>
+							<img src='./../../assets/images/user-svgrepo-com.svg'/>
 						</div>
-						<input type="password" name="password" placeholder='Clave'/>
-					</div>						
-						
-						<div class='btn-login'>
-							<input type="submit" value="INGRESAR"/>
-						</div>
-						<div class='btn-remember'>
-							<input type="submit" value="¿Olvidaste la contraseña?"/>
-						</div>
-					</form>
-				
-			</div>
-	
-	</div>
-
-	
-	<div class='block-green'>
-		
-		<div class='greenbox'>
-			
-			<h2 class ="subtitle">Hello, Friend!</h2>
-			<p>Lorem ipsum dolor sit amet 
-				consectetur, adipisicing elit. 
-				Aut, temporibus consectetur, 
-				hic aperiam cupiditate culpa 
-				consequatur fugit facere vero 
-				et at aliquam illum, est dolore
-				vitae labore. Porro, magnam 
-				ipsum!</p>
-
-				<input id='registrate' type='submit' class='btn-register' name='registro' value="REGISTRATE"/>
+					<input type="text" name="username" placeholder='Nombre'/>
+				</div>
+				<div class='inp'>
+					<div class='icon-left'>
+						<img src='./../../assets/images/password-minimalistic-input-svgrepo-com.svg'/>
+					</div>
+					<input type="password" name="password" placeholder='Clave'/>
+				</div>						
+					
+					<div class='btn-login'>
+						<input type="submit" value="INGRESAR"/>
+					</div>
+					<div class='btn-remember'>
+						<input type="submit" value="¿Olvidaste la contraseña?"/>
+					</div>
+				</form>
 			
 		</div>
-	
-	</div>
 
 </div>
 
 
-</div>;`
+<div class='block-green'>
+	
+	<div class='greenbox'>
+		
+		<h2 class ="subtitle">Hello, Friend!</h2>
+		<p>Lorem ipsum dolor sit amet 
+			consectetur, adipisicing elit. 
+			Aut, temporibus consectetur, 
+			hic aperiam cupiditate culpa 
+			consequatur fugit facere vero 
+			et at aliquam illum, est dolore
+			vitae labore. Porro, magnam 
+			ipsum!</p>
+
+			<input id='registro' type='submit' class='btn-register' name='registro' value="REGISTRATE"/>
+		
+	</div>
+
+</div>
+
+</div>`
 
 bt1?.addEventListener("click", showRegister);
-bt2?.addEventListener("click", showLogin);
 
 function showRegister(){
 	infoLogin.innerHTML = infoUno;
+	var bt2 = document.querySelector('#ingresa');
+	bt2?.addEventListener("click", showLogin);
 }
 function showLogin(){
-	infoRegister.innerHTML = infoDos;
+	infoLogin.innerHTML = infoDos;
 }
 	
 
